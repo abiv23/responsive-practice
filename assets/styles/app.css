@@ -2,7 +2,10 @@
 header {
   width: 100%; }
   header .navbar {
-    height: 18vh; }
+    height: 18vh;
+    margin: 0;
+    border: 0;
+    box-shadow: 3px 3px 5px 6px rgba(123, 115, 115, 0.4); }
     header .navbar .logo-container {
       height: 8vh;
       width: 10rem;
@@ -100,7 +103,7 @@ header {
           header .navbar .nav-search-container .flex-container .input-group .mobile-search-bar {
             border-radius: 0;
             width: 70%;
-            font-size: 2.15rem; }
+            font-size: 140%; }
           header .navbar .nav-search-container .flex-container .input-group .search-icon-button {
             border: none;
             background-color: teal;
@@ -145,5 +148,114 @@ header {
       height: 23vh; } }
 
 /* responsive top nav end*/
+/* agent info start  */
+.agent-info-container {
+  background-color: lightgrey; }
+  .agent-info-container .agent-detail-container {
+    display: flex;
+    flex-direction: column; }
+    .agent-info-container .agent-detail-container .agent-img {
+      border: 0;
+      margin-top: 2%;
+      width: 70%; }
+    .agent-info-container .agent-detail-container .name-container {
+      height: 30%; }
+    .agent-info-container .agent-detail-container .hero-i-container {
+      height: 30%; }
+  @media screen and (min-width: 480px) {
+    .agent-info-container .agent-detail-container {
+      flex-direction: row; } }
+
+/* agent info end */
+/* agent content start */
+.content-container .content-tab {
+  display: none; }
+
+/* agent content end */
+/* footer start */
+footer {
+  width: 100%;
+  background-color: teal;
+  color: white;
+  height: 20vh; }
+  footer .footer-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 10rem; }
+    footer .footer-contact-container .footer-phn-address {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 4rem;
+      width: 100%; }
+      footer .footer-contact-container .footer-phn-address i {
+        font-size: 1.5rem; }
+      footer .footer-contact-container .footer-phn-address .footer-phn {
+        font-size: 1.5rem; }
+      footer .footer-contact-container .footer-phn-address .footer-address {
+        font-size: 1.25rem; }
+      @media screen and (min-width: 481px) {
+        footer .footer-contact-container .footer-phn-address .footer-address {
+          font-size: 1rem; } }
+    @media screen and (min-width: 481px) {
+      footer .footer-contact-container .footer-phn-address {
+        display: flex;
+        align-items: flex-start;
+        width: 95%; } }
+    footer .footer-contact-container .footer-i-container {
+      display: flex;
+      justify-content: space-between;
+      width: 75%; }
+    @media screen and (min-width: 481px) {
+      footer .footer-contact-container .footer-i-container {
+        display: flex;
+        align-items: flex-start;
+        width: 95%; } }
+  @media screen and (min-width: 481px) {
+    footer .footer-contact-container {
+      width: 45%;
+      left: 1rem; } }
+  footer .footer-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; }
+    footer .footer-link-container .footer-links {
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      font-size: 1.2rem; }
+      footer .footer-link-container .footer-links a {
+        color: white; }
+    @media screen and (min-width: 481px) {
+      footer .footer-link-container .footer-links {
+        width: 100%;
+        font-size: 1.1rem; } }
+    footer .footer-link-container .footer-cpyrght {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      font-size: 1rem; }
+    @media screen and (min-width: 481px) {
+      footer .footer-link-container .footer-logos {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; } }
+  @media screen and (min-width: 481px) {
+    footer .footer-link-container {
+      width: 45%;
+      right: 1rem; } }
+
+@media screen and (min-width: 481px) {
+  footer {
+    top: 78rem;
+    height: 10rem; } }
+/* footer end */
 
 /*# sourceMappingURL=app.css.map */
