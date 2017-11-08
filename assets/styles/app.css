@@ -1,0 +1,92 @@
+header {
+  width: 100%; }
+  header .navbar {
+    height: 12rem; }
+    header .navbar .logo-container {
+      height: 5rem;
+      width: 10rem;
+      position: absolute;
+      left: 2rem; }
+      header .navbar .logo-container .mobile-logo {
+        display: inline-block;
+        padding-top: 1rem;
+        height: 100%;
+        position: absolute;
+        left: 0; }
+      header .navbar .logo-container .desktop-logo {
+        display: none; }
+      @media screen and (min-width: 481px) {
+        header .navbar .logo-container .desktop-logo {
+          display: inline-block;
+          position: relative;
+          width: 100%;
+          height: 100%; }
+        header .navbar .logo-container .mobile-logo {
+          display: none; } }
+    @media screen and (min-width: 481px) {
+      header .navbar .logo-container {
+        width: 15rem;
+        position: absolute;
+        left: 2rem; } }
+    header .navbar .top-nav {
+      height: 6rem;
+      width: 60%;
+      position: absolute;
+      right: 2rem;
+      display: flex;
+      box-sizing: border-box; }
+      header .navbar .top-nav .nav-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: teal; }
+        header .navbar .top-nav .nav-icons i {
+          display: flex;
+          justify-content: center;
+          height: .5rem;
+          padding-top: 1rem; }
+    @media screen and (min-width: 768px) {
+      header .navbar .top-nav {
+        width: 30%; } }
+    header .navbar .nav-search-container {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      height: 6rem;
+      width: 100%;
+      background-color: grey; }
+      header .navbar .nav-search-container .flex-container {
+        display: flex; }
+        header .navbar .nav-search-container .flex-container .input-group {
+          display: inline; }
+          header .navbar .nav-search-container .flex-container .input-group .mobile-search-bar {
+            border-radius: 0;
+            width: 70%;
+            font-size: 2.25rem; }
+          header .navbar .nav-search-container .flex-container .input-group .search-icon-button {
+            border: none;
+            background-color: teal;
+            width: 100%;
+            max-height: 3.5rem; }
+            header .navbar .nav-search-container .flex-container .input-group .search-icon-button .search-icon {
+              color: white;
+              fill: white;
+              width: 20%;
+              max-height: 2.5rem; }
+        header .navbar .nav-search-container .flex-container .desktop-search {
+          display: none; }
+        @media screen and (min-width: 768px) {
+          header .navbar .nav-search-container .flex-container .mobile-search {
+            display: none; }
+          header .navbar .nav-search-container .flex-container .desktop-search {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            header .navbar .nav-search-container .flex-container .desktop-search .dsktp-srch-container {
+              display: flex;
+              justify-content: space-around; }
+          header .navbar .nav-search-container .flex-container .desktop-search-bar {
+            width: 40%; } }
+
+/*# sourceMappingURL=app.css.map */
