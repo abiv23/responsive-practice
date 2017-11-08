@@ -1,9 +1,10 @@
+/* responsive top nav start*/
 header {
   width: 100%; }
   header .navbar {
-    height: 12rem; }
+    height: 18vh; }
     header .navbar .logo-container {
-      height: 5rem;
+      height: 8vh;
       width: 10rem;
       position: absolute;
       left: 2rem; }
@@ -23,13 +24,22 @@ header {
           height: 100%; }
         header .navbar .logo-container .mobile-logo {
           display: none; } }
+      @media screen and (min-width: 1200px) {
+        header .navbar .logo-container .desktop-logo {
+          width: 30vw; } }
     @media screen and (min-width: 481px) {
       header .navbar .logo-container {
         width: 15rem;
         position: absolute;
         left: 2rem; } }
+    @media screen and (min-width: 1200px) {
+      header .navbar .logo-container {
+        width: 80rem;
+        height: 8rem;
+        position: absolute;
+        top: 1rem; } }
     header .navbar .top-nav {
-      height: 6rem;
+      height: 8vh;
       width: 60%;
       position: absolute;
       right: 2rem;
@@ -45,9 +55,36 @@ header {
           justify-content: center;
           height: .5rem;
           padding-top: 1rem; }
+        @media screen and (min-width: 1200px) {
+          header .navbar .top-nav .nav-icons .hamburger {
+            display: none; } }
+      @media screen and (min-width: 1200px) {
+        header .navbar .top-nav .nav-icons {
+          display: flex;
+          justify-content: space-between;
+          width: 25%;
+          position: absolute;
+          color: teal;
+          right: 0; } }
+      header .navbar .top-nav .lrg-dsktp-icon-nav {
+        display: none; }
+      @media screen and (min-width: 1200px) {
+        header .navbar .top-nav .lrg-dsktp-icon-nav {
+          display: flex;
+          width: 95%;
+          position: absolute;
+          right: .25%;
+          top: 75%;
+          justify-content: space-between;
+          align-items: flex-end; } }
     @media screen and (min-width: 768px) {
       header .navbar .top-nav {
         width: 30%; } }
+    @media screen and (min-width: 1200px) {
+      header .navbar .top-nav {
+        width: 55%;
+        height: 13.5vh;
+        display: flex; } }
     header .navbar .nav-search-container {
       display: flex;
       align-items: center;
@@ -63,7 +100,7 @@ header {
           header .navbar .nav-search-container .flex-container .input-group .mobile-search-bar {
             border-radius: 0;
             width: 70%;
-            font-size: 2.25rem; }
+            font-size: 2.15rem; }
           header .navbar .nav-search-container .flex-container .input-group .search-icon-button {
             border: none;
             background-color: teal;
@@ -85,8 +122,28 @@ header {
             align-items: center; }
             header .navbar .nav-search-container .flex-container .desktop-search .dsktp-srch-container {
               display: flex;
-              justify-content: space-around; }
+              justify-content: space-between; }
+              header .navbar .nav-search-container .flex-container .desktop-search .dsktp-srch-container .search-button {
+                color: white;
+                border: none;
+                background-color: teal;
+                font-size: 1.75rem; }
+            header .navbar .nav-search-container .flex-container .desktop-search .dsktp-sub-nav-container {
+              display: flex;
+              justify-content: space-between;
+              position: absolute;
+              right: 3%;
+              width: 50%; }
+              header .navbar .nav-search-container .flex-container .desktop-search .dsktp-sub-nav-container a {
+                text-decoration: underline;
+                color: white;
+                font-size: 1.25rem; }
           header .navbar .nav-search-container .flex-container .desktop-search-bar {
-            width: 40%; } }
+            width: 90%; } }
+  @media screen and (min-width: 1200px) {
+    header .navbar {
+      height: 23vh; } }
+
+/* responsive top nav end*/
 
 /*# sourceMappingURL=app.css.map */

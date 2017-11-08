@@ -2,12 +2,14 @@
 //768 tablet
 //480 iphone
 
+
+/* responsive top nav start*/
 header {
   width: 100%;
   .navbar{
-    height: 12rem;
+    height: 18vh;
     .logo-container{
-      height: 5rem;
+      height: 8vh;
       width: 10rem;
       position: absolute;
       left: 2rem;
@@ -32,17 +34,29 @@ header {
             display: none;
           }
         }
+      @media screen and (min-width: 1200px){
+        .desktop-logo{
+          width: 30vw;
+        }
+      }
       }
       @media screen and (min-width: 481px){
             .logo-container {
               width: 15rem;
               position: absolute;
               left: 2rem;
-              ;
             }
           }
+      @media screen and (min-width: 1200px){
+          .logo-container {
+            width: 80rem;
+            height: 8rem;
+            position: absolute;
+            top: 1rem;
+          }
+      }
     .top-nav {
-      height: 6rem;
+      height: 8vh;
       width: 60%;
       position: absolute;
       right: 2rem;
@@ -59,13 +73,49 @@ header {
           height: .5rem;
           padding-top: 1rem;
         }
+        @media screen and (min-width: 1200px){
+          .hamburger {
+            display: none;
+          }
+        }
+      }
+      @media screen and (min-width: 1200px){
+        .nav-icons {
+          display: flex;
+          justify-content: space-between;
+          width: 25%;
+          position: absolute;
+          color: teal;
+          right: 0;
+        }
+      }
+      .lrg-dsktp-icon-nav {
+        display: none;
+      }
+      @media screen and (min-width: 1200px){
+          .lrg-dsktp-icon-nav {
+            display: flex;
+            width: 95%;
+            position: absolute;
+            right: .25%;
+            top: 75%;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
       }
     }
     @media screen and (min-width: 768px){
       .top-nav {
         width: 30%;
       }
-  }
+    }
+    @media screen and (min-width: 1200px){
+      .top-nav {
+        width: 55%;
+        height: 13.5vh;
+        display: flex;
+      }
+    }
   .nav-search-container{
     display: flex;
     align-items: center;
@@ -81,7 +131,7 @@ header {
       .mobile-search-bar{
         border-radius: 0;
         width: 70%;
-        font-size: 2.25rem;
+        font-size: 2.15rem;
       }
       .search-icon-button {
         border: none;
@@ -109,14 +159,39 @@ header {
           align-items: center;
           .dsktp-srch-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            .search-button {
+              color: white;
+              border: none;
+              background-color: teal;
+              font-size: 1.75rem;
+            }
+          }
+          .dsktp-sub-nav-container {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            right: 3%;
+            width: 50%;
+            a {
+              text-decoration: underline;
+              color: white;
+              font-size: 1.25rem;
+            }
           }
         }
         .desktop-search-bar {
-          width: 40%;
+          width: 90%;
         }
       }
     }
   }
 }
+@media screen and (min-width: 1200px){
+    .navbar {
+      height: 23vh;
+    }
 }
+}
+
+/* responsive top nav end*/
