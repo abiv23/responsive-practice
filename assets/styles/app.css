@@ -160,16 +160,72 @@ header {
       width: 70%; }
     .agent-info-container .agent-detail-container .name-container {
       height: 30%; }
+      .agent-info-container .agent-detail-container .name-container .agent-name {
+        font-weight: normal;
+        font-size: 5rem;
+        margin-bottom: 0; }
+      .agent-info-container .agent-detail-container .name-container .realtor-cpyrght {
+        font-weight: normal;
+        font-size: 2rem;
+        color: grey;
+        margin-top: .5rem;
+        margin-bottom: 2rem; }
+      .agent-info-container .agent-detail-container .name-container .contact-btn {
+        width: 100%;
+        background-color: teal;
+        color: white;
+        height: 8vh;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        border-radius: 5px; }
     .agent-info-container .agent-detail-container .hero-i-container {
-      height: 30%; }
-  @media screen and (min-width: 480px) {
+      height: 30%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem; }
+    .agent-info-container .agent-detail-container .hero-contact-container {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: space-between;
+      color: teal;
+      height: 30vh; }
+      .agent-info-container .agent-detail-container .hero-contact-container i:nth-of-type(4n) {
+        margin-bottom: 7%; }
+      .agent-info-container .agent-detail-container .hero-contact-container .phn-icn-space {
+        padding-right: 5%; }
+      .agent-info-container .agent-detail-container .hero-contact-container .dsktp-icn-space {
+        padding-right: 2%; }
+      .agent-info-container .agent-detail-container .hero-contact-container .bldng-icn-space {
+        padding-right: 4%; }
+      .agent-info-container .agent-detail-container .hero-contact-container .nwpr-icn-space {
+        padding-right: 2%;
+        padding-bottom: 10%; }
+      .agent-info-container .agent-detail-container .hero-contact-container .hero-text {
+        font-size: 75%; }
+  @media screen and (min-width: 768px) {
     .agent-info-container .agent-detail-container {
       flex-direction: row; } }
 
 /* agent info end */
 /* agent content start */
+.content-container .agent-select {
+  width: 100%;
+  height: 7vh;
+  background-color: white;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 2rem; }
 .content-container .content-tab {
   display: none; }
+.content-container .content-block {
+  font-size: 1.75rem; }
+.content-container .designation-container {
+  margin-bottom: 5%; }
+  .content-container .designation-container .designation-heading {
+    font-size: 2rem; }
+  .content-container .designation-container .designation {
+    font-size: 1.6rem; }
 
 /* agent content end */
 /* footer start */

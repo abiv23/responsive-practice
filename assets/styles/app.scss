@@ -211,24 +211,96 @@ header {
     }
     .name-container {
       height: 30%;
+      .agent-name {
+        font-weight: normal;
+        font-size: 5rem;
+        margin-bottom: 0;
+      }
+      .realtor-cpyrght {
+        font-weight: normal;
+        font-size: 2rem;
+        color: grey;
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+      }
+      .contact-btn{
+        width: 100%;
+        background-color: teal;
+        color: white;
+        height: 8vh;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+      }
     }
     .hero-i-container{
       height: 30%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+    .hero-contact-container{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: space-between;
+      color: teal;
+      height: 30vh;
+      i:nth-of-type(4n){
+        margin-bottom: 7%;
+      }
+        .phn-icn-space{
+          padding-right: 5%;
+        }
+        .dsktp-icn-space{
+          padding-right: 2%;
+        }
+        .bldng-icn-space{
+          padding-right: 4%;
+        }
+        .nwpr-icn-space{
+          padding-right: 2%;
+          padding-bottom: 10%;
+        }
+        .hero-text{
+          font-size: 75%;
+        }
+      }
+    }
+    @media screen and (min-width: 768px){
+      .agent-detail-container{
+        flex-direction: row;
+      }
     }
   }
-  @media screen and (min-width: 480px){
-    .agent-detail-container{
-      flex-direction: row;
-    }
-  }
-}
+
 /* agent info end */
 
 /* agent content start */
 
 .content-container {
+  .agent-select{
+    width: 100%;
+    height: 7vh;
+    background-color: white;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+  }
   .content-tab{
     display: none;
+  }
+  .content-block{
+    font-size: 1.75rem;
+  }
+  .designation-container {
+    margin-bottom: 5%;
+    .designation-heading{
+      font-size: 1.75rem;
+    }
+    .designation {
+      font-size: 1.5rem;
+    }
   }
 }
 
