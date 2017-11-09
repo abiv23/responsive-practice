@@ -82,7 +82,7 @@ header {
           align-items: flex-end; } }
     @media screen and (min-width: 768px) {
       header .navbar .top-nav {
-        width: 30%; } }
+        width: 25%; } }
     @media screen and (min-width: 1200px) {
       header .navbar .top-nav {
         width: 55%;
@@ -136,13 +136,14 @@ header {
               justify-content: space-between;
               position: absolute;
               right: 3%;
-              width: 50%; }
+              width: 45%; }
               header .navbar .nav-search-container .flex-container .desktop-search .dsktp-sub-nav-container a {
                 text-decoration: underline;
                 color: white;
                 font-size: 1.25rem; }
           header .navbar .nav-search-container .flex-container .desktop-search-bar {
-            width: 90%; } }
+            width: 90%;
+            border-radius: 0; } }
   @media screen and (min-width: 1200px) {
     header .navbar {
       height: 23vh; } }
@@ -158,18 +159,36 @@ header {
       border: 0;
       margin-top: 2%;
       width: 70%; }
+    @media screen and (min-width: 768px) {
+      .agent-info-container .agent-detail-container .agent-img {
+        width: 100%;
+        margin-top: 0; } }
+    @media screen and (min-width: 768px) {
+      .agent-info-container .agent-detail-container .agent-img-container {
+        width: 23%;
+        margin-right: 3%; } }
     .agent-info-container .agent-detail-container .name-container {
       height: 30%; }
       .agent-info-container .agent-detail-container .name-container .agent-name {
         font-weight: normal;
         font-size: 5rem;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        width: 100%;
+        margin-top: 5%; }
+      @media screen and (min-width: 768px) {
+        .agent-info-container .agent-detail-container .name-container .agent-name {
+          font-size: 3rem; } }
       .agent-info-container .agent-detail-container .name-container .realtor-cpyrght {
         font-weight: normal;
         font-size: 2rem;
         color: grey;
         margin-top: .5rem;
         margin-bottom: 2rem; }
+      @media screen and (min-width: 768px) {
+        .agent-info-container .agent-detail-container .name-container .realtor-cpyrght {
+          font-size: 1.5rem;
+          margin-top: 2rem;
+          margin-bottom: 3.25rem; } }
       .agent-info-container .agent-detail-container .name-container .contact-btn {
         width: 100%;
         background-color: teal;
@@ -178,11 +197,25 @@ header {
         font-size: 3rem;
         margin-bottom: 2rem;
         border-radius: 5px; }
-    .agent-info-container .agent-detail-container .hero-i-container {
-      height: 30%;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 3rem; }
+      @media screen and (min-width: 768px) {
+        .agent-info-container .agent-detail-container .name-container .contact-btn {
+          font-size: 2rem;
+          height: 6vh;
+          margin-bottom: 1rem; } }
+      .agent-info-container .agent-detail-container .name-container .hero-i-container {
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem; }
+      @media screen and (min-width: 768px) {
+        .agent-info-container .agent-detail-container .name-container .hero-i-container {
+          margin-bottom: 0; } }
+    @media screen and (min-width: 768px) {
+      .agent-info-container .agent-detail-container .name-container {
+        width: 29%;
+        margin-left: 1%;
+        margin-right: 5%;
+        height: auto; } }
     .agent-info-container .agent-detail-container .hero-contact-container {
       display: flex;
       flex-wrap: nowrap;
@@ -203,6 +236,11 @@ header {
         padding-bottom: 10%; }
       .agent-info-container .agent-detail-container .hero-contact-container .hero-text {
         font-size: 75%; }
+    @media screen and (min-width: 768px) {
+      .agent-info-container .agent-detail-container .hero-contact-container {
+        height: 30vh;
+        width: 38%;
+        margin-top: 1.5%; } }
   @media screen and (min-width: 768px) {
     .agent-info-container .agent-detail-container {
       flex-direction: row; } }
@@ -223,9 +261,9 @@ header {
 .content-container .designation-container {
   margin-bottom: 5%; }
   .content-container .designation-container .designation-heading {
-    font-size: 2rem; }
+    font-size: 1.75rem; }
   .content-container .designation-container .designation {
-    font-size: 1.6rem; }
+    font-size: 1.5rem; }
 
 /* agent content end */
 /* footer start */
