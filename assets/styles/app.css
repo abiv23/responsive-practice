@@ -74,7 +74,7 @@ header {
       @media screen and (min-width: 1200px) {
         header .navbar .top-nav .lrg-dsktp-icon-nav {
           display: flex;
-          width: 95%;
+          width: 82%;
           position: absolute;
           right: .25%;
           top: 75%;
@@ -125,12 +125,17 @@ header {
             align-items: center; }
             header .navbar .nav-search-container .flex-container .desktop-search .dsktp-srch-container {
               display: flex;
-              justify-content: space-between; }
+              justify-content: space-between;
+              width: 100%; }
               header .navbar .nav-search-container .flex-container .desktop-search .dsktp-srch-container .search-button {
                 color: white;
                 border: none;
                 background-color: teal;
-                font-size: 1.75rem; }
+                font-size: 1.75rem; } }
+    @media screen and (min-width: 768px) and (min-width: 1200px) {
+      header .navbar .nav-search-container .flex-container .desktop-search .dsktp-srch-container .search-button {
+        padding: 6px 45px; } }
+        @media screen and (min-width: 768px) {
             header .navbar .nav-search-container .flex-container .desktop-search .dsktp-sub-nav-container {
               display: flex;
               justify-content: space-between;
@@ -140,10 +145,24 @@ header {
               header .navbar .nav-search-container .flex-container .desktop-search .dsktp-sub-nav-container a {
                 text-decoration: underline;
                 color: white;
-                font-size: 1.25rem; }
+                font-size: 1.25rem; } }
+    @media screen and (min-width: 768px) and (min-width: 1200px) {
+      header .navbar .nav-search-container .flex-container .desktop-search .dsktp-sub-nav-container a {
+        font-size: 1.5rem; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    header .navbar .nav-search-container .flex-container .desktop-search .dsktp-sub-nav-container {
+      right: 7%;
+      width: 40%; } }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  header .navbar .nav-search-container .flex-container .desktop-search {
+    width: 26%; } }
+        @media screen and (min-width: 768px) {
           header .navbar .nav-search-container .flex-container .desktop-search-bar {
             width: 90%;
             border-radius: 0; } }
+      @media screen and (min-width: 1200px) {
+        header .navbar .nav-search-container .flex-container {
+          padding: 0 7%; } }
   @media screen and (min-width: 1200px) {
     header .navbar {
       height: 23vh; } }
@@ -167,6 +186,11 @@ header {
       .agent-info-container .agent-detail-container .agent-img-container {
         width: 23%;
         margin-right: 3%; } }
+    @media screen and (min-width: 1200px) {
+      .agent-info-container .agent-detail-container .agent-img-container {
+        margin-right: 0;
+        margin-left: 6%;
+        width: 20%; } }
     .agent-info-container .agent-detail-container .name-container {
       height: 30%; }
       .agent-info-container .agent-detail-container .name-container .agent-name {
@@ -178,6 +202,10 @@ header {
       @media screen and (min-width: 768px) {
         .agent-info-container .agent-detail-container .name-container .agent-name {
           font-size: 3rem; } }
+      @media screen and (min-width: 1200px) {
+        .agent-info-container .agent-detail-container .name-container .agent-name {
+          font-size: 4rem;
+          margin-top: 15%; } }
       .agent-info-container .agent-detail-container .name-container .realtor-cpyrght {
         font-weight: normal;
         font-size: 2rem;
@@ -216,6 +244,10 @@ header {
         margin-left: 1%;
         margin-right: 5%;
         height: auto; } }
+    @media screen and (min-width: 1200px) {
+      .agent-info-container .agent-detail-container .name-container {
+        padding-left: 8%;
+        padding-top: 1%; } }
     .agent-info-container .agent-detail-container .hero-contact-container {
       display: flex;
       flex-wrap: nowrap;
@@ -241,30 +273,83 @@ header {
         height: 30vh;
         width: 38%;
         margin-top: 1.5%; } }
+    @media screen and (min-width: 1200px) {
+      .agent-info-container .agent-detail-container .hero-contact-container {
+        margin-top: 5%;
+        padding-left: 10.5%; } }
   @media screen and (min-width: 768px) {
     .agent-info-container .agent-detail-container {
       flex-direction: row; } }
 
 /* agent info end */
 /* agent content start */
-.content-container .agent-select {
-  width: 100%;
-  height: 7vh;
-  background-color: white;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  font-size: 2rem; }
-.content-container .content-tab {
-  display: none; }
-.content-container .content-block {
-  font-size: 1.75rem; }
-.content-container .designation-container {
-  margin-bottom: 5%; }
-  .content-container .designation-container .designation-heading {
+.content-container {
+  display: flex;
+  flex-direction: column; }
+  .content-container .agent-select {
+    width: 100%;
+    height: 7vh;
+    background-color: white;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 2rem; }
+  @media screen and (min-width: 768px) {
+    .content-container .agent-select {
+      display: none; } }
+  .content-container .content-tab {
+    display: none; }
+  @media screen and (min-width: 768px) {
+    .content-container .content-tab {
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      left: 1rem;
+      right: 1rem; }
+      .content-container .content-tab .tablinks {
+        height: 5rem;
+        background-color: white;
+        width: 25%;
+        border: 2px solid lightgrey;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: 1.5rem;
+        color: lightgrey; }
+      .content-container .content-tab .active {
+        color: teal;
+        border: 2px solid teal;
+        border-top: none;
+        border-left: none;
+        border-right: none; } }
+  @media screen and (min-width: 1200px) {
+    .content-container .content-tab {
+      padding: 0 7%; } }
+  .content-container .content-block {
     font-size: 1.75rem; }
-  .content-container .designation-container .designation {
-    font-size: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .content-container .content-block {
+      margin-top: 10%;
+      margin-bottom: 5%; } }
+  @media screen and (min-width: 768px) {
+    .content-container .content-block {
+      margin: 10% 17% 5% 0; } }
+  .content-container .designation-container {
+    margin-bottom: 5%; }
+    .content-container .designation-container .designation-heading {
+      font-size: 1.75rem; }
+    .content-container .designation-container .designation {
+      font-size: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .content-container .designation-container {
+      margin: 8% 0 0 2%; } }
 
+@media screen and (min-width: 768px) {
+  .content-container {
+    flex-direction: row;
+    justify-content: space-between; } }
+@media screen and (min-width: 768px) {
+  .content-container {
+    padding: 0 7%; } }
 /* agent content end */
 /* footer start */
 footer {

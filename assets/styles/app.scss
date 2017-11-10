@@ -98,7 +98,7 @@ header {
       @media screen and (min-width: 1200px){
           .lrg-dsktp-icon-nav {
             display: flex;
-            width: 95%;
+            width: 82%;
             position: absolute;
             right: .25%;
             top: 75%;
@@ -163,11 +163,17 @@ header {
           .dsktp-srch-container {
             display: flex;
             justify-content: space-between;
+            width: 100%;
             .search-button {
               color: white;
               border: none;
               background-color: teal;
               font-size: 1.75rem;
+            }
+            @media screen and (min-width: 1200px){
+              .search-button{
+                padding: 6px 45px;
+              }
             }
           }
           .dsktp-sub-nav-container {
@@ -181,12 +187,33 @@ header {
               color: white;
               font-size: 1.25rem;
             }
+            @media screen and (min-width: 1200px){
+              a{
+                font-size: 1.5rem;
+              }
+            }
+          }
+          @media screen and (min-width: 1200px){
+            .dsktp-sub-nav-container{
+              right: 7%;
+              width: 40%;
+            }
+          }
+        }
+        @media screen and (min-width: 1200px){
+          .desktop-search {
+            width:26%;
           }
         }
         .desktop-search-bar {
           width: 90%;
           border-radius: 0;
         }
+      }
+    }
+    @media screen and (min-width: 1200px){
+      .flex-container{
+        padding: 0 7%;
       }
     }
   }
@@ -225,6 +252,13 @@ header {
         margin-right: 3%;
       }
     }
+    @media screen and (min-width: 1200px){
+      .agent-img-container {
+        margin-right: 0;
+        margin-left: 6%;
+        width: 20%;
+      }
+    }
     .name-container {
       height: 30%;
       .agent-name {
@@ -232,11 +266,17 @@ header {
         font-size: 5rem;
         margin-bottom: 0;
         width: 100%;
-        margin-top:5%;
+        margin-top: 5%;
       }
       @media screen and (min-width: 768px){
         .agent-name {
           font-size: 3rem;
+        }
+      }
+      @media screen and (min-width: 1200px){
+        .agent-name {
+          font-size: 4rem;
+          margin-top: 15%;
         }
       }
       .realtor-cpyrght {
@@ -251,6 +291,11 @@ header {
           font-size: 1.5rem;
           margin-top: 2rem;
           margin-bottom: 3.25rem;
+        }
+      }
+      @media screen and (min-width: 1200px){
+        .realtor-cpyrght{
+
         }
       }
       .contact-btn{
@@ -289,6 +334,12 @@ header {
         height: auto;
       }
     }
+    @media screen and (min-width: 1200px){
+      .name-container {
+        padding-left: 8%;
+        padding-top: 1%;
+      }
+    }
     .hero-contact-container{
       display: flex;
       flex-wrap: nowrap;
@@ -323,6 +374,12 @@ header {
           margin-top: 1.5%;
         }
       }
+      @media screen and (min-width: 1200px){
+        .hero-contact-container{
+          margin-top: 5%;
+          padding-left: 10.5%;
+        }
+      }
     }
     @media screen and (min-width: 768px){
       .agent-detail-container{
@@ -336,6 +393,8 @@ header {
 /* agent content start */
 
 .content-container {
+  display: flex;
+  flex-direction: column;
   .agent-select{
     width: 100%;
     height: 7vh;
@@ -344,11 +403,59 @@ header {
     margin-bottom: 5%;
     font-size: 2rem;
   }
+  @media screen and (min-width: 768px){
+      .agent-select{
+        display: none;
+        }
+      }
   .content-tab{
     display: none;
   }
+  @media screen and (min-width: 768px){
+      .content-tab {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        .tablinks {
+          height: 5rem;
+          background-color: white;
+          width: 25%;
+          border: 2px solid lightgrey;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          font-size: 1.5rem;
+          color: lightgrey;
+        }
+        .active {
+          color: teal;
+          border: 2px solid teal;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+        }
+        }
+      }
+      @media screen and (min-width: 1200px){
+          .content-tab {
+            padding: 0 7%;
+          }
+        }
   .content-block{
     font-size: 1.75rem;
+  }
+  @media screen and (min-width: 768px){
+    .content-block {
+      margin-top: 10%;
+      margin-bottom: 5%;
+    }
+  }
+  @media screen and (min-width: 768px){
+    .content-block {
+      margin: 10% 17% 5% 0;
+    }
   }
   .designation-container {
     margin-bottom: 5%;
@@ -358,6 +465,22 @@ header {
     .designation {
       font-size: 1.5rem;
     }
+  }
+  @media screen and (min-width: 768px){
+    .designation-container{
+      margin: 8% 0 0 2%;
+    }
+  }
+}
+@media screen and (min-width: 768px){
+  .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px){
+  .content-container {
+    padding: 0 7%;
   }
 }
 
