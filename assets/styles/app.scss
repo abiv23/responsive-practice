@@ -10,7 +10,7 @@ header {
     height: 130px;
     margin: 0;
     border: 0;
-    box-shadow: 3px 3px 5px 6px rgba(123, 115, 115, 0.4);
+    box-shadow: 3px 3px 5px 6px rgba(170, 170, 170, 0.7);
     .logo-container{
       height: 50px;
       width: 10rem;
@@ -26,7 +26,7 @@ header {
     .desktop-logo{
       display: none;
     }
-    @media screen and (min-width: 481px){
+    @media screen and (min-width: 768px){
           .desktop-logo{
             display: inline-block;
             position: relative;
@@ -43,7 +43,7 @@ header {
         }
       }
       }
-      @media screen and (min-width: 481px){
+      @media screen and (min-width: 768px){
             .logo-container {
               width: 15rem;
               position: absolute;
@@ -125,7 +125,7 @@ header {
     bottom: 0;
     height: 6rem;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(170, 170, 170);
     .flex-container{
       display: flex;
     .input-group{
@@ -137,11 +137,10 @@ header {
       }
       .search-icon-button {
         border: none;
-        background-color: teal;
+        background-color: rgb(35, 115, 120);
         width: 100%;
         max-height: 3.5rem;
         .search-icon {
-          color: white;
           fill: white;
           width: 20%;
           max-height: 2.5rem;
@@ -166,7 +165,7 @@ header {
             .search-button {
               color: white;
               border: none;
-              background-color: teal;
+              background-color: rgb(35, 115, 120);
               font-size: 1.75rem;
             }
             @media screen and (min-width: 1200px){
@@ -217,17 +216,22 @@ header {
     }
   }
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 768px){
     .navbar {
-      height: 23vh;
+      height: 110px;
     }
 }
+@media screen and (min-width: 1200px){
+    .navbar {
+      height: 170px;
+    }
+  }
 }
 /* responsive top nav end*/
 
 /* agent info start  */
 .agent-info-container{
-  background-color: lightgrey;
+  background-color: rgb(221, 221, 221);
   .agent-detail-container{
     display: flex;
     flex-direction: column;
@@ -299,12 +303,13 @@ header {
       }
       .contact-btn{
         width: 100%;
-        background-color: teal;
+        background-color: rgb(35, 115, 120);
         color: white;
         height: 40px;
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
         border-radius: 5px;
+        letter-spacing: .25rem;
       }
       @media screen and (min-width: 768px){
         .contact-btn {
@@ -382,6 +387,7 @@ header {
     @media screen and (min-width: 768px){
       .agent-detail-container{
         flex-direction: row;
+        padding-top: 1rem;
       }
     }
   }
@@ -420,7 +426,6 @@ header {
           height: 5rem;
           background-color: white;
           width: 25%;
-          border: 2px solid lightgrey;
           border-top: none;
           border-left: none;
           border-right: none;
@@ -442,13 +447,13 @@ header {
           }
         }
   .content-block{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   @media screen and (min-width: 768px){
     .content-block {
       margin-top: 10%;
       margin-bottom: 5%;
-      width: 70%;
+      width: 65%;
     }
   }
   @media screen and (min-width: 1200px){
@@ -459,10 +464,10 @@ header {
   .designation-container {
     margin-bottom: 5%;
     .designation-heading{
-      font-size: 1.75rem;
+      font-size: 2rem;
     }
     .designation {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
   @media screen and (min-width: 768px){
@@ -488,7 +493,7 @@ header {
  /* footer start */
  footer {
    width:100%;
-   background-color: teal;
+   background-color: rgb(34, 153, 165);
    color: white;
    height: 40vh;
    display: flex;
@@ -511,14 +516,35 @@ header {
        }
        .footer-phn {
          font-size: 2.3rem;
+         letter-spacing: .25rem;
+       }
+       @media screen and (min-width: 768px){
+         .footer-phn {
+           font-size: 2rem;
+         }
        }
        .footer-address {
-        font-size: 2rem;
-        padding-top: 1vh;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        font-weight: lighter;
+         font-size: 2rem;
+         padding-top: 10px;
+         width: 90%;
+         display: flex;
+         justify-content: center;
+         font-weight: lighter;
+         letter-spacing: .25rem;
+       }
+       @media screen and (min-width: 768px){
+         .footer-address{
+           font-size: 1.5rem;
+           letter-spacing: .1rem;
+           justify-content: flex-start;
+         }
+       }
+     }
+     @media screen and (min-width: 768px){
+       .footer-phn-address {
+         align-items: flex-start;
+         padding-left: 4vw;
+         height: 90px;
        }
      }
      .footer-i-container {
@@ -528,16 +554,27 @@ header {
       padding: 0 4vw;
       margin-bottom: 1vh;
      }
+     @media screen and (min-width: 768px){
+       .footer-i-container {
+         margin-bottom: 5vh;
+         width: 70%;
+       }
+     }
    }
    @media screen and (min-width: 768px){
      .footer-contact-container{
-       display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         width: 50%;
         height: 20vh;
       }
+     }
+     @media screen and (min-width: 1200px){
+       .footer-contact-container{
+         margin-left: 5%;
+       }
      }
    .footer-link-container {
      display: flex;
@@ -549,18 +586,37 @@ header {
      .footer-links {
        display: flex;
        justify-content: space-between;
-       width: 75%;
+       width: 90%;
        font-size: 1.5rem;
        text-decoration: underline;
+       letter-spacing: .25rem;
        a {
          color: white;
        }
+     }
+     @media screen and (min-width: 768px){
+       .footer-links{
+         font-size: 1.25rem;
+         margin-top: 1.5vh;
+      }
+     }
+     @media screen and (min-width: 1200px){
+       .footer-links{
+         width: 70%;
+      }
      }
      .footer-cpyrght{
        display: flex;
        justify-content: center;
        font-size: 1.5rem;
        fill: white;
+       letter-spacing: .25rem;
+     }
+     @media screen and (min-width: 768px){
+       .footer-cpyrght{
+         margin-bottom: 2vh;
+         letter-spacing: normal;
+       }
      }
      .footer-logos {
         display: flex;
@@ -568,6 +624,36 @@ header {
         justify-content: space-around;
         width: 25%;
      }
+     @media screen and (min-width: 768px){
+       .footer-logos {
+         margin-bottom: 3vh;
+         width: 35%;
+         justify-content: space-between;
+       }
+     }
+     @media screen and (min-width: 1200px){
+       .footer-logos {
+         width: 25%;
+       }
+     }
+   }
+   @media screen and (min-width: 768px){
+     .footer-link-container {
+       width: 50%;
+       align-items: flex-end;
+       margin-right: 5%;
+     }
+   }
+   @media screen and (min-width: 1200px){
+     .footer-link-container {
+       margin-right: 10%;
+     }
+   }
+ }
+ @media screen and (min-width: 768px){
+   footer {
+     height: 20vh;
+     flex-direction: row;
    }
  }
  /* footer end */
