@@ -7,12 +7,12 @@
 header {
   width: 100%;
   .navbar{
-    height: 18vh;
+    height: 130px;
     margin: 0;
     border: 0;
     box-shadow: 3px 3px 5px 6px rgba(123, 115, 115, 0.4);
     .logo-container{
-      height: 8vh;
+      height: 50px;
       width: 10rem;
       position: absolute;
       left: 2rem;
@@ -59,7 +59,6 @@ header {
           }
       }
     .top-nav {
-      height: 8vh;
       width: 60%;
       position: absolute;
       right: 2rem;
@@ -302,7 +301,7 @@ header {
         width: 100%;
         background-color: teal;
         color: white;
-        height: 8vh;
+        height: 40px;
         font-size: 3rem;
         margin-bottom: 2rem;
         border-radius: 5px;
@@ -310,7 +309,7 @@ header {
       @media screen and (min-width: 768px){
         .contact-btn {
           font-size: 2rem;
-          height: 6vh;
+          height: 40px;
           margin-bottom: 1rem;
         }
       }
@@ -346,7 +345,7 @@ header {
       flex-direction: column;
       justify-content: space-between;
       color: teal;
-      height: 30vh;
+      height: 200px;
       i:nth-of-type(4n){
         margin-bottom: 7%;
       }
@@ -369,7 +368,6 @@ header {
       }
       @media screen and (min-width: 768px){
         .hero-contact-container {
-          height: 30vh;
           width: 38%;
           margin-top: 1.5%;
         }
@@ -493,11 +491,11 @@ header {
    background-color: teal;
    color: white;
    height: 40vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
    .footer-contact-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: 20vh;
     .footer-phn-address {
@@ -515,16 +513,32 @@ header {
          font-size: 2.3rem;
        }
        .footer-address {
-         font-size: 2rem;
-         padding-top: 2vh;
+        font-size: 2rem;
+        padding-top: 1vh;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        font-weight: lighter;
        }
      }
      .footer-i-container {
        display: flex;
-       justify-content: space-between;
-       width: 75%;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 4vw;
+      margin-bottom: 1vh;
      }
    }
+   @media screen and (min-width: 768px){
+     .footer-contact-container{
+       display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+        height: 20vh;
+      }
+     }
    .footer-link-container {
      display: flex;
      flex-direction: column;
@@ -546,11 +560,13 @@ header {
        display: flex;
        justify-content: center;
        font-size: 1.5rem;
-
+       fill: white;
      }
      .footer-logos {
-       fill: white;
-       color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 25%;
      }
    }
  }

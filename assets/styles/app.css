@@ -2,12 +2,12 @@
 header {
   width: 100%; }
   header .navbar {
-    height: 18vh;
+    height: 130px;
     margin: 0;
     border: 0;
     box-shadow: 3px 3px 5px 6px rgba(123, 115, 115, 0.4); }
     header .navbar .logo-container {
-      height: 8vh;
+      height: 50px;
       width: 10rem;
       position: absolute;
       left: 2rem; }
@@ -42,7 +42,6 @@ header {
         position: absolute;
         top: 1rem; } }
     header .navbar .top-nav {
-      height: 8vh;
       width: 60%;
       position: absolute;
       right: 2rem;
@@ -221,14 +220,14 @@ header {
         width: 100%;
         background-color: teal;
         color: white;
-        height: 8vh;
+        height: 40px;
         font-size: 3rem;
         margin-bottom: 2rem;
         border-radius: 5px; }
       @media screen and (min-width: 768px) {
         .agent-info-container .agent-detail-container .name-container .contact-btn {
           font-size: 2rem;
-          height: 6vh;
+          height: 40px;
           margin-bottom: 1rem; } }
       .agent-info-container .agent-detail-container .name-container .hero-i-container {
         height: 30%;
@@ -254,7 +253,7 @@ header {
       flex-direction: column;
       justify-content: space-between;
       color: teal;
-      height: 30vh; }
+      height: 200px; }
       .agent-info-container .agent-detail-container .hero-contact-container i:nth-of-type(4n) {
         margin-bottom: 7%; }
       .agent-info-container .agent-detail-container .hero-contact-container .phn-icn-space {
@@ -270,7 +269,6 @@ header {
         font-size: 75%; }
     @media screen and (min-width: 768px) {
       .agent-info-container .agent-detail-container .hero-contact-container {
-        height: 30vh;
         width: 38%;
         margin-top: 1.5%; } }
     @media screen and (min-width: 1200px) {
@@ -357,12 +355,12 @@ footer {
   width: 100%;
   background-color: teal;
   color: white;
-  height: 40vh; }
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
   footer .footer-contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: 20vh; }
     footer .footer-contact-container .footer-phn-address {
@@ -379,11 +377,25 @@ footer {
         font-size: 2.3rem; }
       footer .footer-contact-container .footer-phn-address .footer-address {
         font-size: 2rem;
-        padding-top: 2vh; }
+        padding-top: 1vh;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        font-weight: lighter; }
     footer .footer-contact-container .footer-i-container {
       display: flex;
       justify-content: space-between;
-      width: 75%; }
+      width: 100%;
+      padding: 0 4vw;
+      margin-bottom: 1vh; }
+  @media screen and (min-width: 768px) {
+    footer .footer-contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 50%;
+      height: 20vh; } }
   footer .footer-link-container {
     display: flex;
     flex-direction: column;
@@ -402,10 +414,13 @@ footer {
     footer .footer-link-container .footer-cpyrght {
       display: flex;
       justify-content: center;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      fill: white; }
     footer .footer-link-container .footer-logos {
-      fill: white;
-      color: white; }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 25%; }
 
 /* footer end */
 
