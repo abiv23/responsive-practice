@@ -444,17 +444,18 @@ header {
           }
         }
   .content-block{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   @media screen and (min-width: 768px){
     .content-block {
       margin-top: 10%;
       margin-bottom: 5%;
+      width: 70%;
     }
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 1200px){
     .content-block {
-      margin: 10% 17% 5% 0;
+      width: 65%;
     }
   }
   .designation-container {
@@ -463,22 +464,22 @@ header {
       font-size: 1.75rem;
     }
     .designation {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
   @media screen and (min-width: 768px){
     .designation-container{
-      margin: 8% 0 0 2%;
+      margin: 8% 0 0 10%;
     }
   }
 }
 @media screen and (min-width: 768px){
   .content-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
   .content-container {
     padding: 0 7%;
   }

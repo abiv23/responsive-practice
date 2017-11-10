@@ -325,29 +325,30 @@ header {
     .content-container .content-tab {
       padding: 0 7%; } }
   .content-container .content-block {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   @media screen and (min-width: 768px) {
     .content-container .content-block {
       margin-top: 10%;
-      margin-bottom: 5%; } }
-  @media screen and (min-width: 768px) {
+      margin-bottom: 5%;
+      width: 70%; } }
+  @media screen and (min-width: 1200px) {
     .content-container .content-block {
-      margin: 10% 17% 5% 0; } }
+      width: 65%; } }
   .content-container .designation-container {
     margin-bottom: 5%; }
     .content-container .designation-container .designation-heading {
       font-size: 1.75rem; }
     .content-container .designation-container .designation {
-      font-size: 1.5rem; }
+      font-size: 1.25rem; }
   @media screen and (min-width: 768px) {
     .content-container .designation-container {
-      margin: 8% 0 0 2%; } }
+      margin: 8% 0 0 10%; } }
 
 @media screen and (min-width: 768px) {
   .content-container {
     flex-direction: row;
-    justify-content: space-between; } }
-@media screen and (min-width: 768px) {
+    justify-content: flex-start; } }
+@media screen and (min-width: 1200px) {
   .content-container {
     padding: 0 7%; } }
 /* agent content end */
